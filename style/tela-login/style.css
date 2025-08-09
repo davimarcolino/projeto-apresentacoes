@@ -49,7 +49,7 @@ section.login > div {
 }
 
 section.login > div#img {
-    background: var(--cor1) url(../images/pattern.jpg) no-repeat center center fixed;
+    background: var(--cor1) url(../../images/pattern.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -133,6 +133,10 @@ div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label:hover {
     font-weight: normal;
 }
 
+div.submit > div > input[type="submit"] {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 div.submit > div > input[type="submit"], div.submit > div > a {
     display: inline-block;
     text-decoration: none;
@@ -143,7 +147,7 @@ div.submit > div > input[type="submit"], div.submit > div > a {
     padding: 2px;
     cursor: pointer;
     height: 23px;
-    width: 49%;
+    width: 49.1%;
     border-radius: 10px;
     box-shadow: 3px 3px 1px rgb(0, 0, 0);
     transition: 0.5s;
@@ -153,5 +157,5 @@ div.submit > div > input[type="submit"]:hover, div.submit > div > a:hover {
     transform: translate(-4px, -4px);
     box-shadow: 7px 7px 1px rgb(0, 0, 0);
     background-color: var(--cor4);
-    transition: transform 0.5s;
+    transition: 0.5s;
 }
