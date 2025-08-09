@@ -1,2 +1,37 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+:root {
+    --cor1: #0080db;
+    --cor2: #003bdb;
+    --cor3: #0b00db;
+    --cor4: #5300db;
+    --cor5: #9b00db;
+    --cor6: #d1d1d1;
+    --cor7: #00185a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: var(--cor1);
+}
+
+header > h1 {
+    text-align: center;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    padding: 10px;
+}
