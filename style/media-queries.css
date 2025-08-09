@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+    html, body {
+        background-image: linear-gradient(to top, var(--cor3), var(--cor4), var(--cor5));
+    }
+
+    main {
+        height: 400px;
+    }
+
+    div#img, div#form {
+        width: 50%;
+    }
+
+    #img {
+        height: 100%;
+    }
+
+    #form {
+        margin-top: 60px;
+        height: 100%;
+    }
+
+    div.login > div {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    main {
+        width: 90vw;
+    }
+
+    #img {
+        float: left;
+    }
+
+    #form {
+        float: right;
+    }
+
+    div.login > div > input {
+        width: 33vw;
+        transform: translate(calc(4vw - 25px), 1px);
+    }
+
+    div.login > div:hover > input {
+        transform: translate(calc(4vw - 25px), 1px);
+    }
+}
+
+@media screen and (min-width: 993px) {
+    main {
+        width: 800px;
+    }
+
+    #img {
+        float: right;
+    }
+
+    #form {
+        float: left;
+    }
+    
+    div.login > div > input {
+        width: 80%;
+        transform: translateX(17px);
+    }
+
+    div.login > div:hover > input {
+        transform: translateX(17px);
+    }
+}

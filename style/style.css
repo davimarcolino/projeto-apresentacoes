@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #0080db;
+    --cor2: #003bdb;
+    --cor3: #0b00db;
+    --cor4: #5300db;
+    --cor5: #9b00db;
+    --cor6: #d1d1d1;
+    --cor7: #00185a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor4);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: wheat;
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+section.login {
+    width: 100%;
+    height: 100%;
+}
+
+section.login > div {
+    display: block;
+    height: 50%;
+}
+
+section.login > div#img {
+    background: var(--cor1) url(../images/pattern.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+section.login > div#form {
+    text-align: center;
+    padding: 0px 23px ;
+    color: var(--cor7);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1, p, label {
+    margin: 5px 0px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+div.login > div {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin: 5px auto;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0);
+}
+
+div.login > div > i {
+    transform: translateY(7px);
+    transition: 0.5s;
+}
+
+div.login > div:hover > i {
+    text-shadow: 0px 5px 10px rgb(0, 0, 0);
+    transform: translate(-1px);
+    transition: 0.5s;
+}
+
+div.login > div > label {
+    display: none;
+}
+
+div.login > div > input {
+    background-color: var(--cor6);
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    transform: translateX(7px);
+    padding: 5px;
+    font-weight: bold;
+    color: var(--cor7);
+}
+
+div.login > div:hover > input {
+    transform: translate(7px, 0px);
+}
+
+div.login input:focus-within {
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+
+div.submit > div.lembrar-me {
+    text-align: left;
+    margin: 5px 0px;
+}
+
+div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label {
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label:hover {
+    font-weight: normal;
+}
+
+div.submit > div > input[type="submit"], div.submit > div > a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor6);
+    background-color: var(--cor1);
+    border: 0;
+    font-size: 0.8em;
+    padding: 2px;
+    cursor: pointer;
+    height: 23px;
+    width: 49%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+div.submit > div > input[type="submit"]:hover, div.submit > div > a:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 7px 7px 1px rgb(0, 0, 0);
+    background-color: var(--cor4);
+    transition: transform 0.5s;
+}
