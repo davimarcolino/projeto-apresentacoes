@@ -1,2 +1,28 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 993px) {
+    html, body {
+        background-color: var(--cor7);
+    }
+
+    #detalhe-fundo {
+        display: inline;
+    }
+
+    main {
+        width: 900px;
+        margin: auto;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #frame {
+        max-width: 750px;
+        padding-top: max(421px);
+    }
+
+    #links {
+        width: 800px;
+        margin: auto;
+        padding: 0;
+    }
+}
