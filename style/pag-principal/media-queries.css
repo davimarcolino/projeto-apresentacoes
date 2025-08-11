@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 730px) {
+    #links ul {
+        columns: 2;
+    }
+}
+
 @media screen and (min-width: 993px) {
     html, body {
         background-color: var(--cor7);
-    }
-
-    #detalhe-fundo {
-        display: inline;
     }
 
     main {
