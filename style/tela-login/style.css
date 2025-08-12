@@ -130,7 +130,7 @@ div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label {
 }
 
 div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label:hover {
-    font-weight: normal;
+    color: black;
 }
 
 div.submit > div > input[type="submit"] {
