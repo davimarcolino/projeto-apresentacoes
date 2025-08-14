@@ -23,6 +23,20 @@ html, body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#form h1, #form p, #form label, input {
+    margin: 5px 0px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
 main {
     position: absolute;
     top: 50%;
@@ -38,43 +52,29 @@ main {
     transition-timing-function: ease;
 }
 
-section.login {
+.login {
     width: 100%;
     height: 100%;
 }
 
-section.login > div {
+.login > div {
     display: block;
     height: 50%;
 }
 
-section.login > div#img {
+.login > #img {
     background: var(--cor1) url(../../images/pattern.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
-section.login > div#form {
+.login > #form {
     text-align: center;
     padding: 0px 23px ;
     color: var(--cor7);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-h1, p, label {
-    margin: 5px 0px;
-}
-
-h1 {
-    font-size: 1.8em;
-}
-
-p {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    line-height: 1.6em;
-}
-
-div.login > div {
+.cadastro > div {
     background-color: var(--cor1);
     border-radius: 10px;
     width: 250px;
@@ -83,22 +83,22 @@ div.login > div {
     box-shadow: 3px 3px 1px rgba(0, 0, 0);
 }
 
-div.login > div > i {
+.cadastro > div > i {
     transform: translateY(7px);
     transition: 0.5s;
 }
 
-div.login > div:hover > i {
+.cadastro > div:hover > i {
     text-shadow: 0px 5px 10px rgb(0, 0, 0);
     transform: translate(-1px);
     transition: 0.5s;
 }
 
-div.login > div > label {
+.cadastro > div > label {
     display: none;
 }
 
-div.login > div > input {
+.cadastro > div > input {
     background-color: var(--cor6);
     width: 80%;
     height: 30px;
@@ -110,34 +110,34 @@ div.login > div > input {
     color: var(--cor7);
 }
 
-div.login > div:hover > input {
+.cadastro > div:hover > input {
     transform: translate(7px, 0px);
 }
 
-div.login input:focus-within {
+.cadastro input:focus-within {
     background-color: var(--cor1);
     color: var(--cor6);
 }
 
-div.submit > div.lembrar-me {
+.submit > .lembrar-me {
     text-align: left;
-    margin: 5px 0px;
+    margin-top: 5px;
 }
 
-div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label {
+.submit > .lembrar-me > input, .submit > .lembrar-me > label {
     cursor: pointer;
     font-weight: lighter;
 }
 
-div.submit > div.lembrar-me > input, div.submit > div.lembrar-me > label:hover {
+.submit > .lembrar-me > input, .submit > .lembrar-me > label:hover {
     color: black;
 }
 
-div.submit > div > input[type="submit"] {
+.submit > .enviar > input[type="submit"] {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-div.submit > div > input[type="submit"], div.submit > div > a {
+.submit > .enviar > input[type="submit"], .submit > .enviar > a {
     display: inline-block;
     text-decoration: none;
     color: var(--cor6);
@@ -153,7 +153,7 @@ div.submit > div > input[type="submit"], div.submit > div > a {
     transition: 0.5s;
 }
 
-div.submit > div > input[type="submit"]:hover, div.submit > div > a:hover {
+.submit > .enviar > input[type="submit"]:hover, .submit > .enviar > a:hover {
     transform: translate(-4px, -4px);
     box-shadow: 7px 7px 1px rgb(0, 0, 0);
     background-color: var(--cor4);

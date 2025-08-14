@@ -9,7 +9,7 @@
         height: 350px;
     }
 
-    div#img, div#form {
+    .login > div {
         width: 50%;
     }
 
@@ -22,7 +22,7 @@
         height: 100%;
     }
 
-    div.login > div {
+    .cadastro > div {
         width: 100%;
     }
 }
@@ -41,12 +41,12 @@
         float: right;
     }
 
-    div.login > div > input {
+    .cadastro > div > input {
         width: 33vw;
         transform: translate(calc(4vw - 25px), 1px);
     }
 
-    div.login > div:hover > input {
+    .cadastro > div:hover > input {
         transform: translate(calc(4vw - 25px), 1px);
     }
 }
@@ -64,12 +64,12 @@
         float: left;
     }
     
-    div.login > div > input {
+    .cadastro > div > input {
         width: 80%;
         transform: translateX(17px);
     }
 
-    div.login > div:hover > input {
+    .cadastro > div:hover > input {
         transform: translateX(17px);
     }
 }
